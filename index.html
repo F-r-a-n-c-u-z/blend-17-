@@ -7,27 +7,89 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-bba2b67f.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-ca786d23.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+  <button class="header-menu-btn js-open-menu" type="button"></button>
 </header>
+<!-- Mobile menu -->
+<div class="mobile-menu js-menu-container">
+  <button
+    type="button"
+    class="modal-btn mobile js-close-menu"
+    aria-label="Mobile menu close button"
+  >
+    <svg class="modal-icon-close" width="8" height="8">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <ul class="mobile-menu-list">
+    <li class="mobile-metu-item">
+      <a href="" class="mobile-menu-link active">Studio</a>
+    </li>
+    <li class="mobile-metu-item">
+      <a href="" class="mobile-menu-link">Portfolio</a>
+    </li>
+    <li class="mobile-metu-item">
+      <a href="" class="mobile-menu-link">Contacts</a>
+    </li>
+  </ul>
+
+  <ul class="adress-list mobile">
+    <li>
+      <a href="mailto:info@devstudio.com" class="address-item mobile"
+        >info@devstudio.com</a
+      >
+    </li>
+    <li>
+      <a href="tel:+110001111111" class="address-item mobile active"
+        >+11 (000) 111-11-11</a
+      >
+    </li>
+  </ul>
+
+  <ul class="socials mobile">
+    <li class="socials-item">
+      <a href="https://www.instagram.com/" class="socials-link">
+        <svg class="socials-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-instagram"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="socials-item">
+      <a href="https://www.twitter.com/" class="socials-link">
+        <svg class="socials-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-twitter"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="socials-item">
+      <a href="https://www.facebook.com/" class="socials-link">
+        <svg class="socials-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-facebook"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="socials-item">
+      <a href="https://www.linkedin.com/" class="socials-link">
+        <svg class="socials-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-linkedin"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
 
     ENOENT: no such file or directory, open '/home/runner/work/blend-17-/blend-17-/src/partials/hero.html '
     ENOENT: no such file or directory, open '/home/runner/work/blend-17-/blend-17-/src/partials/about.html '
     ENOENT: no such file or directory, open '/home/runner/work/blend-17-/blend-17-/src/partials/footer.html '
-
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     
   </body>
 </html>
